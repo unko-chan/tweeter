@@ -6,7 +6,9 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -14,11 +16,10 @@ html {
  * Global layout stuff
  */
 
-
 body {
   color: #545149;
   background-color: #f4f1ec;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 24px;
 }
 
@@ -26,14 +27,59 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
-
 .container {
-  border-color: black;
-  border-style: dotted;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-self: center;
   margin-left: 5%;
   margin-right: 5%;
-  height: 500px;
+}
+
+.posts {
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+}
+
+article.posts header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.postBody {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1rem;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
+article.posts footer {
+  border-top: solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+/* ask mentor about this: is this ok to do */
+article.posts footer p {
+  margin-top: 0.5em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.box-shadow {
+  box-shadow: 5px 10px 1px gray;
+}
+
+.tweetHandle {
+  color: transparent
 }
