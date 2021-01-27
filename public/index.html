@@ -38,6 +38,8 @@
 
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 
+    <script type="text/javascript" src="/scripts/tweetHover.js"></script>
+
   </head>
 
   <body>
@@ -46,7 +48,7 @@
       <span class="headerText"> tweeter </span>
     </nav>
 
-    <header>
+    <header class="profile">
       <div class="profilePicture">
         <img src="/images/profile-hex.png" />
       </div>
@@ -74,18 +76,22 @@
 
         <!-- tweet container -->
         <section> 
-          <article>
+          
+          <article class="posts">
 
             <header>
-              header
+              <p>name</p> 
+              <p class="tweetHandle">@handle</p>
             </header>
 
-            <body>
-              body
-            </body>
+            <!-- ask mentor: using a div like this and having <p> -->
+            <div class="postBody">
+              <p>tweet text</p>
+            </div>
 
             <footer>
-              footer
+              <p>10 days ago</p>
+              <p>icons</p>
             </footer>
 
           </article>
@@ -95,3 +101,8 @@
     </main>
   </body>
 </html>
+
+<!-- Ask mentors about:
+tweetHover.js
+layout.css
+index.html -->
