@@ -17,6 +17,7 @@ html {
  */
 
 body {
+  padding-top: 75px;
   color: #545149;
   background-color: #f4f1ec;
   font-family: 'Source Sans Pro', sans-serif;
@@ -26,6 +27,12 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
 
 .container {
   display: flex;
@@ -39,6 +46,7 @@ body {
   border-style: solid;
   display: flex;
   flex-direction: column;
+  margin: 1em;
 }
 
 article.posts header {
@@ -76,10 +84,13 @@ article.posts footer p {
   margin-right: 1em;
 }
 
-.box-shadow {
-  box-shadow: 5px 10px 1px gray;
+.tweetHandle {
+  color: transparent;
 }
 
-.tweetHandle {
-  color: transparent
+article.posts:hover .tweetHandle {
+  color: gray;
+}
+article.posts:hover {
+  box-shadow: 5px 10px 1px gray;
 }
