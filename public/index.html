@@ -38,8 +38,6 @@
 
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 
-    <script type="text/javascript" src="/scripts/tweetHover.js"></script>
-
   </head>
 
   <body>
@@ -61,48 +59,25 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <form action="/tweets" method="POST">
+        <form id="postTweet" action="/tweets" method="POST">
 
           <div class="tweet">
-            <textarea rows="1" id="newTweet" placeholder="What are you humming about?"></textarea>
+            <textarea name="text" rows="1" id="newTweet" placeholder="What are you humming about?"></textarea>
           </div>
 
           <div class="handler">
-            <button type="submit">Tweet</button>
+            <button type="submit" for="newTweet">Tweet</button>
             <output id="counter">140</output>
           </div>
-
+          
         </form>
+      </section>
 
         <!-- tweet container -->
-        <section> 
+        <section id="tweets-container"> 
           
-          <article class="posts">
-
-            <header>
-              <p>name</p> 
-              <p class="tweetHandle">@handle</p>
-            </header>
-
-            <!-- ask mentor: using a div like this and having <p> -->
-            <div class="postBody">
-              <p>tweet text</p>
-            </div>
-
-            <footer>
-              <p>10 days ago</p>
-              <p>icons</p>
-            </footer>
-
-          </article>
         </section>
 
-      </section>
     </main>
   </body>
 </html>
-
-<!-- Ask mentors about:
-tweetHover.js
-layout.css
-index.html -->
