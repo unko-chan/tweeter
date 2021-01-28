@@ -1,10 +1,10 @@
+const MAXCHAR = 140; //note
 $(document).ready(function () {
   console.log('ready!');
   $('textarea').on({
     input: function () {
       const counter = $(this).closest('form').find('output')
-      const maxChar = 140;
-      const remainChar = maxChar - $(this).val().length;
+      const remainChar = MAXCHAR - $(this).val().length;
       
       counter.text(remainChar);
 
