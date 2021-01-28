@@ -12,6 +12,12 @@ $(document).ready(function () {
     });
   };
 
+  const escape =  function(str) {
+    let div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  }
+
   const createTweetElement = function (tweetObject) {
     const tweetMarkup = `
     <article class="posts">
@@ -22,7 +28,7 @@ $(document).ready(function () {
       </header>
 
       <div class="postBody">
-        <p>${tweetObject.content.text}</p>
+        <p>${escape(tweetObject.content.text)}</p>
       </div>
 
       <footer>
@@ -48,8 +54,9 @@ $(document).ready(function () {
       alert('tweet is over character limit');
       return false;
     }
-    
-    $.post('/tweets', $(this).serialize());
+
+    //removed parentheses on loadTweets() due to the callback firing before success
+    $.post('/tweets', $(this).serialize(), loadTweets); 
   });
 
   const loadTweets = function () {
