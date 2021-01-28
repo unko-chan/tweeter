@@ -12,11 +12,11 @@ $(document).ready(function () {
     });
   };
 
-  const escape =  function(str) {
+  const escape = function (str) {
     let div = document.createElement('div');
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
-  }
+  };
 
   const createTweetElement = function (tweetObject) {
     const tweetMarkup = `
@@ -46,23 +46,28 @@ $(document).ready(function () {
     const textform = $('textarea').val();
 
     if (textform.trim() === '') {
-      alert('empty tweet');
+      $('#warning').text('Oh no! Your tweet is empty!').slideDown();
       return false;
     }
 
     if (textform.length > 140) {
-      alert('tweet is over character limit');
+      $('#warning').text('Oh no! Your beak can\'t handle that tweet! ').slideDown();
       return false;
     }
 
+    $('#warning').slideUp();
     //removed parentheses on loadTweets() due to the callback firing before success
-    $.post('/tweets', $(this).serialize(), loadTweets); 
+    $.post('/tweets', $(this).serialize(), loadTweets);
   });
 
   const loadTweets = function () {
     $.getJSON('/tweets').done(function (response) {
+      $('#tweets-container').empty(); //solves double render bug
       renderTweets(response);
     });
   };
+
+  $('#warning').hide();
+
   loadTweets();
 });
