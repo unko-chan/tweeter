@@ -12,6 +12,8 @@ Frontpage
 
 
 Mobile View
+
+
 !["Mobile View"](https://i.imgur.com/Sz1E61j.png)
 
 
@@ -20,6 +22,8 @@ Over character limit error
 
 
 Tweets
+
+
 !["Tweets"](https://i.imgur.com/BqnI7pO.png)
 
 
