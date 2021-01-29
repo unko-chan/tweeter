@@ -1,4 +1,4 @@
-const MAXCHAR = 140; //note
+const MAXCHAR = 140;
 $(document).ready(function () {
   $('textarea').on({
     input: function () {
