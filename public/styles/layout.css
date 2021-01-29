@@ -54,7 +54,9 @@ nav {
 }
 
 .posts {
+  border-radius: 0.3em;
   border-style: solid;
+  border-width: 0.1em;
   display: flex;
   flex-direction: column;
   margin: 1em;
@@ -81,6 +83,7 @@ article.posts header {
 
 article.posts footer {
   border-top: solid;
+  border-width: 0.2em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
