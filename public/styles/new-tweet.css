@@ -37,6 +37,7 @@ button[type="submit"]{
   color: white;
   outline: none;
   border: none;
+  border-radius: 0.3em;
   background-color: #4056A1;
 }
 
