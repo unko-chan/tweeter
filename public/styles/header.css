@@ -1,10 +1,29 @@
-
-
 .profile {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 400px;
+  height: 350px;
   background-color: #f7a46c;
-  background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
+  background-image: url('https://www.transparenttextures.com/patterns/gplay.png');
+  min-width: 20em;
+  max-width: 20em;
+  flex-grow: 2;
+  margin: 2em;
+  margin-top: 3em;
+}
+
+#pfp {
+  padding-top: 1em;
+  max-width: 10em;
+  max-height: 10em;
+}
+
+@media only screen and (max-width: 1024px) {
+  .profile {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    margin: 0;
+    max-width: 100%;
+  }
 }
