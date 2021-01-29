@@ -8,23 +8,23 @@ I've built upon this project to practice my HTML, CSS, JS, jQuery and AJAX front
 ## Screenshots
 
 Frontpage
-!["Frontpage"](https://i.imgur.com/pFLAHIf.png)
+!["Frontpage"](https://i.imgur.com/iUUNH6A.png)
 
 
 Mobile View
 
 
-!["Mobile View"](https://i.imgur.com/Sz1E61j.png)
+!["Mobile View"](https://i.imgur.com/cfSQ3PL.png)
 
 
 Over character limit error
-!["Over character limit error"](https://i.imgur.com/Sa76So8.png)
+!["Over character limit error"](https://i.imgur.com/8ylSSv1.png)
 
 
 Tweets
 
 
-!["Tweets"](https://i.imgur.com/BqnI7pO.png)
+!["Tweets"](https://i.imgur.com/p2yBLm1.png)
 
 
 ## Getting Started
