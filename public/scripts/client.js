@@ -80,6 +80,7 @@ $(document).ready(function () {
     $.post('/tweets', $(this).serialize(), function () {
       loadTweets();
       $('textarea').val(''); //Success callback to take in multiple functions
+      $('output').text(MAXCHAR)
     });
   });
 
