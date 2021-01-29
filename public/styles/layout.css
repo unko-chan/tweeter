@@ -77,7 +77,6 @@ article.posts header {
   margin-left: 1.5em;
   margin-right: 1.5em;
   overflow-wrap: break-word;
-  max-width: 1em;
 }
 
 article.posts footer {
