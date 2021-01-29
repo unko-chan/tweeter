@@ -56,7 +56,6 @@ $(document).ready(function () {
     
     if ($('.new-tweet').height() === 92) {
       $('.new-tweet').slideUp();
-      $('textarea').val('');
     }
   });
 
@@ -77,7 +76,6 @@ $(document).ready(function () {
     }
 
     $('#warning').slideUp();
-    $('.new-tweet').slideUp();
 
     $.post('/tweets', $(this).serialize(), function () {
       loadTweets();
