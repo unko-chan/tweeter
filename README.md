@@ -7,10 +7,10 @@ I've built upon this project to practice my HTML, CSS, JS, jQuery and AJAX front
 
 ## Screenshots
 
-!['Frontpage'](https://i.imgur.com/pFLAHIf.png)
-!['Mobile View'](https://i.imgur.com/Sz1E61j.png)
-!['Over character limit error'](https://i.imgur.com/Sa76So8.png)
-!['Tweets'](https://i.imgur.com/BqnI7pO.png)
+!["Frontpage"](https://i.imgur.com/pFLAHIf.png)
+!["Mobile View"](https://i.imgur.com/Sz1E61j.png)
+!["Over character limit error"](https://i.imgur.com/Sa76So8.png)
+!["Tweets"](https://i.imgur.com/BqnI7pO.png)
 
 
 ## Getting Started
